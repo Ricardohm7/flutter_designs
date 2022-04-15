@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:designs/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 
 class Background extends StatelessWidget {
@@ -27,6 +28,7 @@ class Background extends StatelessWidget {
         ),
         //Pink box
         Positioned(top: -100, left: -30, child: _PinkBox()),
+        _HomeBody()
       ],
     );
   }
@@ -50,6 +52,20 @@ class _PinkBox extends StatelessWidget {
           ]),
         ),
       ),
+    );
+  }
+}
+
+class _HomeBody extends StatelessWidget {
+  const _HomeBody({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(children: [
+        //Titulos
+        PageTile(),
+      ]),
     );
   }
 }
