@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:designs/widgets/card_table.dart';
 import 'package:designs/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 
@@ -65,6 +66,8 @@ class _HomeBody extends StatelessWidget {
       child: Column(children: [
         //Titulos
         PageTile(),
+        //Card table
+        CardTable(),
       ]),
     );
   }
